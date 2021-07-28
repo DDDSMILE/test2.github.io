@@ -1,0 +1,564 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    a:link,
+    a:active,
+    a:visited {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    body {
+        font-family: Roboto, sans-serif;
+    }
+    
+    .container {
+        max-width: 1170px;
+        margin: 0px auto;
+        padding: 0px 15px;
+    }
+    /* section */
+    
+    section {
+        padding-top: 80px !important;
+        padding-bottom: 100px !important;
+        /* padding: 80px 0px 100px 0px !important; */
+    }
+    
+    section h2 {
+        height: 35px;
+        line-height: 35px;
+        font-size: 33px;
+        color: #292f36;
+        text-transform: uppercase;
+        font-weight: normal;
+        border-left: 10px solid #e1e6ea;
+        padding: 0px 14px;
+        margin-bottom: 60px;
+    }
+    /* header */
+    
+    header {
+        background-color: #1d2126;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 26px 15px;
+        line-height: 30px;
+    }
+    
+    header h1 {
+        height: 30px;
+    }
+    
+    header ul {
+        height: 30px;
+    }
+    
+    header ul li {
+        display: inline-block;
+        height: 30px;
+    }
+    
+    header ul li a {
+        color: #a4aead;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 30px;
+        display: inline-block;
+        padding: 0px 10px;
+        margin: 0px 15px;
+        border: 2px solid transparent;
+        border-radius: 4px;
+    }
+    
+    header ul li a.active {
+        color: #23b7a4;
+        border-color: #23b7a4;
+        border-radius: 4px;
+    }
+    
+    header ul li a:hover {
+        border-color: #5b6168;
+    }
+    /* jumbotron */
+    
+    #jumbotron {
+        background-image: url(images/pic1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #jumbotron .container {
+        min-height: 660px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+    
+    #jumbotron .info {
+        max-width: 655px;
+    }
+    
+    #jumbotron .info h1 {
+        font-size: 36px;
+        line-height: 42px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    
+    #jumbotron .info div {
+        margin-top: 36px;
+        font-size: 0px;
+    }
+    
+    #jumbotron .info p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #ccd0d7;
+        margin-top: 24px;
+    }
+    
+    #jumbotron .info .sec1button a {
+        display: inline-block;
+        height: 44px;
+        line-height: 44px;
+        padding: 0px 28px;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 2px solid white;
+        border-radius: 5px;
+        margin-right: 11px;
+    }
+    
+    #jumbotron .info .sec1button a:last-child {
+        margin-right: 0px;
+    }
+    
+    #jumbotron .info .sec1button a:hover {
+        background-color: #23b7a4;
+        border-color: #23b7a4;
+    }
+    
+    #jumbotron .dots {
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+    }
+    
+    #jumbotron .dots a {
+        width: 13px;
+        height: 13px;
+        border: 2px solid white;
+        border-radius: 50%;
+        display: inline-block;
+        text-indent: -100000px;
+        margin-left: 9px;
+    }
+    
+    #jumbotron .dots a:hover {
+        background-color: white;
+    }
+    /* end section1 */
+    /* about */
+    
+    .about-section {
+        border-bottom: 1px solid #dde1e4;
+    }
+    
+    #about {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #about>div {
+        max-width: 654px;
+    }
+    
+    #about>ul {
+        max-width: 457px;
+    }
+    
+    #about div p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #8d8f92;
+        margin-bottom: 25px;
+    }
+    
+    #about>div>ul {
+        font-size: 0;
+        margin-top: 73px;
+    }
+    
+    #about>div>ul>li {
+        display: inline-block;
+        margin-right: 1px;
+    }
+    
+    #about>div>ul>li a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        text-indent: -100000px;
+        background-color: #c8cdd0;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    #about>div>ul>li:nth-child(1) a {
+        background-image: url(images/socials/facebook.png);
+    }
+    
+    #about>div>ul>li:nth-child(2) a {
+        background-image: url(images/socials/twitter.png);
+    }
+    
+    #about>div>ul>li:nth-child(3) a {
+        background-image: url(images/socials/google.png);
+    }
+    
+    #about>div>ul>li:nth-child(4) a {
+        background-image: url(images/socials/dribble.png);
+    }
+    
+    #about>div>ul>li:nth-child(5) a {
+        background-image: url(images/socials/behance.png);
+    }
+    
+    #about>div>ul>li a:hover {
+        background-color: #d0d5d9;
+    }
+    
+    #about>ul {
+        counter-reset: about-counter;
+    }
+    
+    #about>ul li {
+        position: relative;
+    }
+    
+    #about>ul li::before {
+        content: counter(about-counter, decimal-leading-zero);
+        counter-increment: about-counter;
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #23b7a4;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #about>ul li h3 {
+        font-size: 18px;
+        line-height: 18px;
+        color: #292f36;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-left: 69px;
+        margin-bottom: 13px;
+    }
+    
+    #about>ul li p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #8d8f92;
+        margin-left: 69px;
+        margin-bottom: 31px;
+    }
+    /* end section2 */
+    /* partners */
+    
+    #partners {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #partners div img {
+        max-width: 100%;
+    }
+    
+    #parnters .partners-info p:first-child {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #292f36;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 21px;
+    }
+    
+    #parnters .partners-info p:last-child {
+        font-size: 14px;
+        color: #8d8f92;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 21px;
+    }
+    
+    #partners>div {
+        /* width: calc((100%-90)/4); */
+        width: 262.5px;
+        background-color: #e1e6ea;
+        position: relative;
+    }
+    
+    #partners .social-links {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+    
+    #partners>div:hover .social-links {
+        display: flex;
+        opacity: 1;
+    }
+    
+    .social-links ul {
+        font-size: 0;
+    }
+    
+    .social-links ul li {
+        display: inline-block;
+        margin-right: 1px;
+    }
+    
+    .social-links ul li:last-child {
+        margin-right: 0px;
+    }
+    
+    .social-links ul li a {
+        display: none;
+        width: 50px;
+        height: 50px;
+        background-color: #3a454d;
+        text-indent: -1000000px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    #partners>div:hover .social-links a {
+        display: block;
+    }
+    
+    .social-links ul li a:hover {
+        background-color: #4e5a62;
+    }
+    
+    .social-links ul li:nth-child(1) a {
+        background-image: url(images/socials/twitter.png);
+    }
+    
+    .social-links ul li:nth-child(2) a {
+        background-image: url(images/socials/facebook.png);
+    }
+    
+    .social-links ul li:nth-child(3) a {
+        background-image: url(images/socials/linkedin.png);
+    }
+    /* endsection3 */
+    /* works */
+    
+    #works {
+        background-color: #3a454d;
+        padding-bottom: 60px !important;
+    }
+    
+    #works h2 {
+        color: white;
+        border-left-color: #4e5a62;
+    }
+    
+    #works-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #works-list>div {
+        /* margin-right: 30px; */
+        width: calc((100% - 60px) / 3);
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    #works-list>div img {
+        max-width: 100%;
+    }
+    
+    #works-list>div:last-child {
+        margin-right: 0;
+    }
+    
+    #works-list>div:hover .mask {
+        opacity: 1;
+    }
+    
+    #works-list .mask {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(41, 47, 54, 0.5);
+        transition: opacity 0.35s ease-in-out;
+        overflow-y: hidden;
+    }
+    
+    #works-list .mask a {
+        text-indent: -1000000px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 92px auto;
+        background-image: url(images/plus.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    #works-list .mask p {
+        background-color: #292f36;
+        position: absolute;
+        left: 0;
+        bottom: -60px;
+        width: 100%;
+        height: 60px;
+        color: white;
+        line-height: 60px;
+        font-size: 18px;
+        padding: 0px 20px;
+        text-transform: uppercase;
+    }
+    
+    #works-list>div:hover .mask p {
+        bottom: 0;
+        transition: bottom 0.4s ease-in-out;
+    }
+    
+    #works-load-more {
+        text-align: center;
+    }
+    
+    #works-load-more a {
+        display: inline-block;
+        height: 44px;
+        line-height: 44px;
+        padding: 0px 20px;
+        border: 2px solid white;
+        margin: 30px auto 0px auto;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    #works-load-more a:hover {
+        background-color: white;
+        color: #292f36;
+    }
+    /* what we do  */
+    
+    #do {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #do>div {
+        width: calc((100% - 90px) / 4);
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 83px;
+    }
+    
+    #do>div:nth-child(4n + 1) {
+        background-image: url(images/services/1.png);
+    }
+    
+    #do>div:nth-child(4n + 2) {
+        background-image: url(images/services/2.png);
+    }
+    
+    #do>div:nth-child(4n + 3) {
+        background-image: url(images/services/3.png);
+    }
+    
+    #do>div:nth-child(4n + 4) {
+        background-image: url(images/services/4.png);
+    }
+    
+    #do div p {
+        text-align: center;
+    }
+    
+    #do div p:first-child {
+        font-size: 17px;
+        text-transform: uppercase;
+        color: #292f36;
+    }
+    
+    #do div p:last-child {
+        font-size: 16px;
+        line-height: 26px;
+        color: #8d8f92;
+        margin-top: 28px;
+        margin-bottom: 85px;
+    }
+    /* responsive */
+    
+    @media screen and (max-width: 1100px) {
+        #about>div {
+            max-width: 50%;
+        }
+        #about>ul {
+            max-width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 660px) {
+        #jumbotron .container {
+            min-height: 250px;
+        }
+        #jumbotron .info {
+            max-width: 85%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #jumbotron .info h1,
+        #jumbotron .info h1,
+        #jumbotron .info div {
+            text-align: center;
+        }
+        #partners {
+            flex-wrap: wrap;
+        }
+        #partners>div {
+            width: calc((100% - 30px) / 2);
+        }
+    }
